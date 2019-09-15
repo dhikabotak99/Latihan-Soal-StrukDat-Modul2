@@ -15,4 +15,7 @@ public class Stack {
     public int pop(){//Method pop
         return stackArray[top--];
     }
+    public int top(){//Method top
+        return top;
+    }
 }
