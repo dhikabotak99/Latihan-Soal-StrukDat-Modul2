@@ -18,4 +18,7 @@ public class Stack {
     public int top(){//Method top
         return top;
     }
+    public boolean isEmpty(){//Method If Empty
+        return top==-1;
+    }
 }
