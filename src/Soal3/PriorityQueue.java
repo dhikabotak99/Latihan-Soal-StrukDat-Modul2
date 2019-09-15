@@ -31,4 +31,8 @@ public class PriorityQueue {
     public int Dequeue(){
         return queue[--nItems];
     }
+    
+    public int peekMin(){
+        return queue[nItems-1];
+    }
 }
