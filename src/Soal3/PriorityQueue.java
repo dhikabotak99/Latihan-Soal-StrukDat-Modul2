@@ -23,6 +23,12 @@ public class PriorityQueue {
                     break;
                 }
             }
+            queue[j+1]=e;
+            nItems++;
         }
+    }
+    
+    public int Dequeue(){
+        return queue[--nItems];
     }
 }
