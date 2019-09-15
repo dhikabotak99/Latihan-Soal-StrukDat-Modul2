@@ -28,6 +28,11 @@ public class Queue {
         nItems--;
         return temp;
     }
+    
+    //Jika queue kosong
+    public boolean isEmpty(){
+        return(nItems==0);
+    }
 }
 
     
