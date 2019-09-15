@@ -11,6 +11,14 @@ public class Queue {
     private int nItems;//Jumlah Item
     private int[] queue;
     
+    //Constructor
+    public Queue(int s){
+        max=s;
+        queue = new int[max];
+        front=0;
+        rear=-1;
+        nItems=0;
+    }
     public void enqueue(int e){
         if (rear==max-1) {//Mengatur lokasi Rear
             rear=-1;
@@ -20,7 +28,7 @@ public class Queue {
     }
     
     //Untuk Menghapus Item di Queue
-    public long dequeue(){
+    public int dequeue(){
         int temp = queue[front++];//Mengambil value dan mengurangi nilai front
         if (front==max) {//Mengatur Lokasi Front
             front=0;
