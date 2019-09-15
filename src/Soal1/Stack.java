@@ -12,4 +12,7 @@ public class Stack {
     public void push(int p){//Method Push
         stackArray[++top]=p;
     }
+    public int pop(){//Method pop
+        return stackArray[top--];
+    }
 }
