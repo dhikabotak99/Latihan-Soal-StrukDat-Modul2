@@ -21,7 +21,7 @@ public class Queue {
     
     //Untuk Menghapus Item di Queue
     public long dequeue(){
-        long temp = queue[front++];//Mengambil value dan mengurangi nilai front
+        int temp = queue[front++];//Mengambil value dan mengurangi nilai front
         if (front==max) {//Mengatur Lokasi Front
             front=0;
         }
@@ -32,6 +32,10 @@ public class Queue {
     //Jika queue kosong
     public boolean isEmpty(){
         return(nItems==0);
+    }
+    
+    public int peekFront(){
+        return front;
     }
 }
 
