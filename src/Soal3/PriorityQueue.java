@@ -9,6 +9,11 @@ public class PriorityQueue {
     private int[] queue;
     private int nItems;
     
+    public PriorityQueue(int s){
+        max=s;
+        queue = new int[max];
+        nItems=0;
+    }
     public void Enqueue(int e){
         int j;
         if (nItems==0) {//Jika tidak ada
