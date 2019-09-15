@@ -35,4 +35,7 @@ public class PriorityQueue {
     public int peekMin(){
         return queue[nItems-1];
     }
+    public boolean isEmpty(){
+        return (nItems==0);
+    }
 }
