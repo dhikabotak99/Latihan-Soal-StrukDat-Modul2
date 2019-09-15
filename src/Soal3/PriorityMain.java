@@ -11,7 +11,7 @@ package Soal3;
  */
 public class PriorityMain {
     public static void main(String[] args){
-        PriorityQueue pq = new PriorityQueue();
+        PriorityQueue pq = new PriorityQueue(5);
         pq.Enqueue(10);
         pq.Enqueue(30);
         pq.Enqueue(50);
